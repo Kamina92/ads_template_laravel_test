@@ -1,0 +1,488 @@
+
+:root{
+    --yellow : #ffe020;
+    --blue: #1D4CDF;
+    --red: #E20D0C;
+    --black: #020202;
+    --white: #fff;
+    --black-v: #0d0208;
+    --green-2:#008f11;
+    --green-1:#003b00;
+    --green-3:#00ff41;
+    --main:#f9423a;
+
+}
+
+.c-main{
+    color: var(--main);
+}
+.c-gray{
+    color: rgba(128, 128, 128, 0.501);
+}
+
+.c-black-v{
+    color: var(--black-v);
+}
+
+.c-green-1{
+    color: var(--green-1);
+}
+
+.c-green-2{
+    color: var(--green-2);
+}
+
+.c-green-3{
+    color: var(--green-3);
+}
+
+.c-yellow{
+    color: var(--yellow);
+}
+
+.c-blue{
+    color: var(--blue);
+}
+
+.c-red{
+    color: var(--red);
+}
+
+.c-black{
+    color: var(--black);
+}
+
+.c-white{
+    color: var(--white);
+}
+
+.z-ind{
+    z-index: 99;
+}
+
+.bgc-main{
+    background-color : var(--main);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-color: whitesmoke;
+    background-position: center;
+}
+
+.b-left-none{
+    border-left: none;
+}
+
+/* NAVBAR */
+
+#logIn{
+    z-index: 9999;
+    background-color: whitesmoke;
+    position: relative;
+    height: 65px;
+
+}
+
+#navDesk{
+    background-color: whitesmoke;
+
+}
+#navMobile{
+    background-color: whitesmoke;
+
+}
+
+.contLogIn{
+    top: -100px;
+}
+.contLogIn-active{
+    top: 65px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: 2px solid var(--main);
+}
+
+.btn-logIn{
+    padding:6px 30px;
+    margin-bottom: 1px;
+}
+
+.navCont{
+    border-top:1px solid #dfe3ed;
+    border-bottom:1px solid #dfe3ed;
+}
+
+.navLink{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.navLink:hover{
+    text-decoration: underline;
+    color: var(--black-v);
+}
+
+.btNav{
+    padding: 10;
+    background-color: rgba(249, 66, 58, 0.1);
+    transition: all 0.5s;
+}
+
+.btNav:hover{
+    border: 1px solid var(--red);
+    color: var(--main);
+}
+
+.navLogo:hover{
+    text-decoration: none;
+    color: var(--main);
+
+}
+
+/* HEADER */
+
+.mastHead{
+    height: 50vh;
+    background-image: url(/media/World\ Map.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+
+}
+
+/* SEARCHBAR */
+
+.srcCont{
+
+    background-color: var(--white);
+    box-shadow: 2px 2px 4px grey;
+    min-height: 120px;
+    max-width: 80%;
+    margin-top: 150px;
+}
+
+.h-120{
+    min-height: 120px;
+}
+
+.scrRow{
+    min-height: 120px;
+}
+
+.srcBoxes{
+    padding: 0px;
+    min-height: 50px;
+    width: 80%;
+    padding: 0px;
+    border-left: none;
+    border-top:1px solid rgba(128, 128, 128, 0.35);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+    border-right: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 5px;
+
+}
+
+.srcBoxes:focus{
+    border-left: none;
+    border-top:1px solid rgba(128, 128, 128, 0.35);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+    border-right: 1px solid rgba(128, 128, 128, 0.35);
+    box-shadow: none;
+}
+
+.srcBtn{
+    height: 50px;
+    background-color: var(--main);
+    color: var(--white);
+    font-weight: 300;
+}
+.srcBtn:hover{
+    background-color: rgba(249, 66, 58, 0.5);
+    color: var(--white);
+   
+}
+
+.fw-medBold{
+    font-weight: 500;
+}
+
+/* CATEGORIE */
+
+.cardCat{
+    background: linear-gradient(90deg,#002eff 50%, #f9423a 50%);
+    background-size: 200%;
+    background-position: right;
+    overflow: hidden;
+    border: 1px transparent;
+    border-radius: 10px;
+    height: 180px;
+    max-width: 250px;
+    color: var(--white);
+    margin: 80px 10px 10px 10px;
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardCat:hover{
+
+    background-position: left;
+    transform: scale(1.1);
+    
+}
+.cardCat1{
+    background: linear-gradient(90deg,#9923fe 50%, #f9423a 50%);
+    background-size: 200%;
+    background-position: right;
+    overflow: hidden;
+    border: 1px transparent;
+    border-radius: 10px;
+    height: 180px;
+    max-width: 250px;
+    color: var(--white);
+    margin: 80px 10px 10px 10px;
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardCat1:hover{
+
+    background-position: left;
+    transform: scale(1.1);
+    
+}
+.cardCat2{
+    background: linear-gradient(90deg,#0abb9c 50%, #f9423a 50%);
+    background-size: 200%;
+    background-position: right;
+    overflow: hidden;
+    border: 1px transparent;
+    border-radius: 10px;
+    height: 180px;
+    max-width: 250px;
+    color: var(--white);
+    margin: 80px 10px 10px 10px;
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardCat2:hover{
+
+    background-position: left;
+    transform: scale(1.1);
+    
+}
+.cardCat3{
+    background: linear-gradient(90deg,#f2a702 50%, #f9423a 50%);
+    background-size: 200%;
+    background-position: right;
+    overflow: hidden;
+    border: 1px transparent;
+    border-radius: 10px;
+    height: 180px;
+    max-width: 250px;
+    color: var(--white);
+    margin: 80px 10px 10px 10px;
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardCat3:hover{
+
+    background-position: left;
+    transform: scale(1.1);
+    
+}
+
+.btnCat{
+    color: var(--white);
+    padding: 10px 50px;
+    border: 1px solid var(--white);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.btnCat:hover{
+    color: var(--white);
+    border: 3px solid white;
+
+}
+
+/* CARD PRODOTTI */
+
+.cardProd{
+    height: 400px;
+    width: 300px;
+    background-color: var(--white);
+    color: var(--main);
+    border: 1px transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px var(--main);
+    overflow: hidden;
+    padding: 0px;
+    margin: auto;
+}
+
+.swiper-pagination-bullet-active{
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--main)
+}
+
+.tagVendo{
+
+    padding: 5px 15px;
+    background-color: var(--main);
+    color: var(--white);
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 60px
+
+}
+.tagCerco{
+
+    padding: 5px 15px;
+    background-color: var(--green-2);
+    color: var(--white);
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 60px
+
+}
+.tagPremium{
+
+    padding: 5px 15px;
+    background-color: var(--yellow);
+    color: var(--black-v);
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 401px
+
+}
+.cardProduct{
+    height: 400px;
+    width: 300px;
+    background-color: var(--white);
+    color: var(--main);
+    border: 1px transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px var(--main);
+    overflow: hidden;
+    padding: 0px;
+    margin: auto;
+    position: relative;
+}
+
+.swiper-pagination-bullet-active{
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--main)
+}
+
+.tagSell{
+
+    padding: 5px 15px;
+    background-color: var(--main);
+    color: var(--white);
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 20px
+
+}
+.tagSearch{
+
+    padding: 5px 15px;
+    background-color: var(--green-2);
+    color: var(--white);
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 20px
+
+}
+.tagPrem{
+
+    padding: 5px 15px;
+    background-color: var(--yellow);
+    color: var(--black-v);
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 353px
+
+}
+
+/* ASIDE ACCOUNT PREMIUM */
+
+.contPrem{
+    
+    border: 2px dashed rgba(128, 128, 128, 0.35);
+    
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icoPrem{
+    padding: 45px;
+    border: 1px transparent;
+    border-radius: 100%;
+    background-color: var(--white);
+    box-shadow: 2px 2px 10px var(--main);
+    z-index:999;
+}
+
+/* #middleIco{
+    position: relative;
+    
+}
+
+#middleIco::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 70px;
+    content: '\f0da';
+    position: absolute;
+    left: 320px;
+} */
+
+/* FOOTER */
+
+/* FILE PRODUCTS */
+
+.prodFiltBar{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.35);
+}
