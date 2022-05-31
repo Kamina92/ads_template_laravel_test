@@ -87,6 +87,8 @@ fetch('./MOCK_DATA.json')
 
   function populateProd(products) {
 
+    products.sort((a,b)=> b.premium-a.premium);
+
     products.forEach(el=>{
       let div = document.createElement('div');
         div.classList.add('col-12','col-lg-4','product-element');
@@ -116,15 +118,6 @@ fetch('./MOCK_DATA.json')
           </div>
         `
         secProd.appendChild(div);
-    })
-    let productElement=document.querySelectorAll('.product-element');
-    let order=1;
-    productElement.forEach(product=>{
-     let stat= product.getAttribute('premium')
-      if(stat =='1'){
-        product.style.order=order;
-        order++;
-      }
     })
   }
   
