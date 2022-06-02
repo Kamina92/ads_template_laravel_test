@@ -13,20 +13,28 @@
                 </div>
             </div>
             <div class="row justify-content-evenly" id="secProd">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center" id="pageWrap">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-                          </li>
-                     
-                        </ul>
-                      </nav>
-                </div>
+                @foreach ($prodotti as $prodotto)
+                <div class="cardProduct my-5">
+                    <img src="/media/car.png" alt=""class="img-fluid mx-0">
+                    <h6 class="mt-2 ms-2">{{$prodotto['product']}}</h6>
+                    <p class="mt-2 ms-2 fs-6 d-block mb-0">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    {{$prodotto['category']}}
+                    </p>
+                    <small class="mt-2 ms-2 d-block">
+                    <i class="fa-solid fa-location-dot"></i>
+                    {{$prodotto['position']}}
+                    </small>
+                    <small class="mt-2 ms-2 d-block">
+                        {{$prodotto['date']}}
+                    </small>
+                    {{-- <small class=${el.stat=="vendo"? 'tagSell' : 'tagSearch'}>${el.stat=="vendo"? 'VENDO' : 'CERCO'}</small>
+                    <small class=${el.premium=="1"?'tagPrem':''}>${el.premium=="1"? 'PREMIUM' : ''}</small> --}}
+                    <small class="mt-2 ms-auto me-2 pb-3 text-end d-block fw-bold fs-4 c-green-2">
+                        {{$prodotto['price']}}
+                    </small>
+                  </div>   
+                @endforeach
             </div>
         </section>
     </x-layout>
